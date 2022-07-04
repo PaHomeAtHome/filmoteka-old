@@ -1,4 +1,3 @@
-const axios = require('axios');
 const API_KEY = `1b50ba0e0b99203af5e26bdcee6d2298`;
 const BASE_URL = 'https://api.themoviedb.org/3/search/movie'
 
