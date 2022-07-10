@@ -91,35 +91,20 @@ document.addEventListener('DOMContentLoaded', popularOnPageLoad);
 
 function popularOnPageLoad() {
   getMovies(API_URL);
-<<<<<<< Updated upstream
+
 }
-
-export async function getMovies(url) {
-  try {
-    const response = await fetch(url);
-    const toJson = await response.json();
-
-    showMovies(toJson.results);
-  } catch (error) {
-    console.log(error);
-  }
-=======
-  
-}
-
-export async function getMovies(url) {
+  export async function getMovies(url) {
     try {
-        const response = await fetch(url);
-        const toJson = await response.json();
+      const response = await fetch(url);
+      const toJson = await response.json();
        
       showMovies(toJson.results);
-      }
+    }
     
     catch (error) {
       console.log(error);
     }
->>>>>>> Stashed changes
-}
+  }
 
 export function showMovies(data) {
   const markup = data
