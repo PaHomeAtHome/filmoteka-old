@@ -18,11 +18,10 @@ function onSearch(e) {
     if (newsApiService.query === '') {
         return;
     }
-
     
 
     // loadMoreBtn.show();
-    // newsApiService.resetPage();
+    newsApiService.resetPage();
     
     clearGalleryContainer();
     fetchThemovie();
@@ -37,7 +36,8 @@ function appendArticlesMarkup(data) {
 async function fetchThemovie() {
     try {
         // loadMoreBtn.disable();
-        const res = await newsApiService.fetchThemovie('results');
+        const res = await newsApiService.fetchThemovie();
+        console.log(res);
       
         if (res) {
             appendArticlesMarkup(res);
@@ -51,3 +51,5 @@ async function fetchThemovie() {
 function clearGalleryContainer() {
     refs.galleryMovie.innerHTML = '';
 }
+
+

@@ -14,7 +14,6 @@ export default class NewsApiService {
 
         try {
             const axiosFetch = await axios.get(url);
-         
             const { data } = axiosFetch;
 
             this.incrementPage();

@@ -88,11 +88,11 @@ const genres = [
 
 document.addEventListener("DOMContentLoaded", popularOnPageLoad);
 
-function popularOnPageLoad() {
+export function popularOnPageLoad() {
     getMovies(API_URL);
 }
 
-async function getMovies(url) {
+export async function getMovies(url) {
     try {
         const response = await fetch(url);
         const toJson = await response.json();
@@ -130,3 +130,5 @@ export function showMovies(data) {
     
     main.insertAdjacentHTML('beforeend', markup);
 }
+
+
