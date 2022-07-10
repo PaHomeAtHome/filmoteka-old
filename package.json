@@ -27,7 +27,11 @@
   },
   "dependencies": {
     "axios": "^0.27.2",
+<<<<<<< Updated upstream
     "hbs": "^4.2.0",
+=======
+    "canvas": "^2.9.3",
+>>>>>>> Stashed changes
     "notiflix": "^3.2.5",
     "paginationjs": "^2.1.5",
     "simple-lightbox": "^2.1.0",
