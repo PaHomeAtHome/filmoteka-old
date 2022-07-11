@@ -1,8 +1,13 @@
 import { showMovies } from './popular';
 import { getMovies } from './popular';
 import { popularOnPageLoad } from './popular';
+import { popular } from './pagination';
 
-const API_KEY_SEARCH = `1b50ba0e0b99203af5e26bdcee6d2298`;
+
+popular();
+
+export function searchMov() {
+    const API_KEY_SEARCH = `1b50ba0e0b99203af5e26bdcee6d2298`;
 const BASE_URL_SEARCH = 'https://api.themoviedb.org/3/search/movie';
 
 const searchForm = document.querySelector('.js-search-form');
@@ -25,6 +30,7 @@ function onSearch(e) {
     e.preventDefault();
 
     const searchQuery = e.currentTarget.elements.searchQuery.value;
+    
     console.log(searchQuery);
     wrapper.innerHTML = ''; 
 
@@ -88,3 +94,6 @@ function onSearch(e) {
 
 
 }
+}
+
+searchMov();
