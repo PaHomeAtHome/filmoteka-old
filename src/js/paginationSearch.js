@@ -1,7 +1,7 @@
 import { showMovies } from './popular';
 import { getMovies } from './popular';
 import { popularOnPageLoad } from './popular';
-import { popular } from './pagination';
+import { popular } from './paginationPoular';
 
 
 popular();
